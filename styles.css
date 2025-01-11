@@ -1,0 +1,130 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h1 {
+  color: #ecf0f1;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #db5b34;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #2980b9;
+}
+
+#cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #34495e;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #ff7e5f;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #000000;
+}
+
+.card button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #c0392b;
+}
+
+/* Градиенты для типов погоды */
+.card.clear {
+  background: linear-gradient(to bottom right, #f39c12, #f1c40f);
+  color: #ecf0f1;
+}
+
+.card.clouds {
+  background: linear-gradient(to bottom right, #95a5a6, #7f8c8d);
+  color: #ecf0f1;
+}
+
+.card.rain {
+  background: linear-gradient(to bottom right, #3498db, #2980b9);
+  color: #ecf0f1;
+}
+
+.card.snow {
+  background: linear-gradient(to bottom right, #ecf0f1, #bdc3c7);
+  color: #333;
+}
+
+.card.thunderstorm {
+  background: linear-gradient(to bottom right, #2c3e50, #34495e);
+  color: #ecf0f1;
+}
+
+.card.drizzle {
+  background: linear-gradient(to bottom right, #1abc9c, #16a085);
+  color: #333;
+}
+
+.card.mist {
+  background: linear-gradient(to bottom right, #7f8c8d, #95a5a6);
+  color: #ecf0f1;
+}
